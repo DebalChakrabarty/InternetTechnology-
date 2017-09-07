@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                FirstName:
+                <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation"></span>
+                <br> <br> LastName:
+                <input type="text" name="lastName" id="lastName" size="40" placeholder="Enter your lastName" required ><br><span id="secondValidation"></span> <br>
+                
+                    <input type="radio" name="gender" id="male"> male <br>
+                    <input type="radio" name="gender" id="female"> female <br>
+                Tshirt size <br>
+                <select name="tshirtColor" id="dropDown">
+                    <option value="small"> small </option>
+                    <option value="medium" selected>  medium </option>
+                    <option value="large"> large</option>
+                </select>
+                <br><br>
+                Tshirt color <br>
+                <select name="tshirtColor" id="dropDown">
+                    <option value="small"> red </option>
+                    <option value="medium" selected>  blue </option>
+                    <option value="large"> yellow </option>
+                </select>
+                <br><br>
+                email : <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
+                <br> <br>
+                password: <input type="password" name="password" id="password" placeholder="Enter your email" required><br><br><br>
+
+                Address: <br>
+                <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br> <br>
+                <input type="submit" value="Submit" id="submit" onclick="validate();" >  
+                <input type="reset" value="Reset" id="reset">          
+
+            </form>
+        </div>
+    </body>
+</html>
