@@ -1,10 +1,15 @@
 body{
-    background-image: url("549219.jpg");
+    background-image: url("back.jpg");
 }
 div.form
 {
     display: block;
     text-align: center;
+}
+input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 form
 {
@@ -33,9 +38,11 @@ form
 }
 #submit{
     padding: 20px;
+    border-radius: 8px;
 }
 #reset{
     padding: 20px;
+    border-radius: 8px;
 }
 #firstValidation{
     margin-left: 100px;
