@@ -1,25 +1,30 @@
 function validate(){
     var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var regex=/^[a-zA-z]+$/;
     console.log("inside validate");
-    for(i=0;i<firstName.length;i++)
+    if(firstName == "")
     {
-        console.log("inside firstname");
-        if(!(firstName.charAt(i)>="A" && firstName.charAt(i)<="Z" || firstName.charAt(i)>="a" && firstName.charAt(i)<="z" ))
+        document.getElementById("firstValidation").innerHTML = "firstname cannot be left blank";
+    }
+    else if(lastName== "")
+    {
+        document.getElementById("secondValidation").innerHTML = "lastname cannot be left blank";
+    }
+    else
+    {
+        if(regex.test(firstName)== false)
         {
                 document.getElementById("firstValidation").innerHTML = "No special characters or numbers";
                 document.getElementById("firstName").value="";
-                break;
+        }
+        if(regex.test(lastName)== false)
+        {
+                document.getElementById("secondValidation").innerHTML = "No special characters or numbers";
+                document.getElementById("lastName").value="";
         }
     }
-
-    for(i=0;i<lastName.length;i++)
-    {
-            console.log("inside lastname");
-            if(!(lastName.charAt(i)>="A" && lastName.charAt(i)<="Z" || firstName.charAt(i)>="a" && firstName.charAt(i)<="z"))
-            {
-                    document.getElementById("secondValidation").innerHTML = "No special characters or numbers";
-                    document.getElementById("lastName").value="";
-                    break;
-            }
-    }
+}
+function resetFields(){
+        window.location.reload(true);
 }

@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="form">
-            <form>
+            <form id="myForm">
                 FirstName:
                 <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation"></span>
                 <br> <br> LastName:
@@ -17,9 +17,9 @@
                     <input type="radio" name="gender" id="female"> female <br>
                 Tshirt size <br>
                 <select name="tshirtColor" id="dropDown">
-                    <option value="small"> small </option>
-                    <option value="medium" selected>  medium </option>
-                    <option value="large"> large</option>
+                    <option value="small"> Small </option>
+                    <option value="medium" selected>  Medium </option>
+                    <option value="large"> Large </option>
                 </select>
                 <br><br>
                 Tshirt color <br>
@@ -30,13 +30,13 @@
                 </select>
                 <br><br>
                 email : <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
-                <br> <br>
+                <br> <span id="emailValidation"></span><br>
                 password: <input type="password" name="password" id="password" placeholder="Enter your email" required><br><br><br>
 
                 Address: <br>
-                <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br> <br>
+                <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br><span id="addressValidation"></span> <br>
                 <input type="submit" value="Submit" id="submit" onclick="validate();" >  
-                <input type="reset" value="Reset" id="reset">          
+                <input type="reset" value="Reset" id="reset" onclick="resetFields();">          
 
             </form>
         </div>
