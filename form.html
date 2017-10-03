@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="form">
-            <form id="myForm">
+            <form id="myForm" action="mailto:ratulchakrabarty1994@gmail.com" method = "post" enctype="text/plain" >
                 FirstName:
                 <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation"></span>
                 <br> <br> LastName:
@@ -31,7 +31,8 @@
                 <br><br>
                 email : <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
                 <br> <span id="emailValidation"></span><br>
-                password: <input type="password" name="password" id="password" placeholder="Enter your email" required><br><br><br>
+                password: <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
+                phone number: <input type="tel" id = "phno" placeholder="Enter your phone number" size="10" required><br><span id="phoneValidation"></span><br><br>
 
                 Address: <br>
                 <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br><span id="addressValidation"></span> <br>

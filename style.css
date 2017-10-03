@@ -29,6 +29,9 @@ form
     margin-top: 40px;
     width: 310px;
 }
+#phno{
+    width:272px;
+}
 #lastName{
     margin-left: 4px;
     width: 310px;
@@ -52,6 +55,13 @@ form
 }
 #secondValidation{
     margin-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: rgba(250, 3, 3, 0.45);
+    font-size: x-large;
+}
+
+#phoneValidation{
+    margin-left: 128px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     color: rgba(250, 3, 3, 0.45);
     font-size: x-large;
