@@ -3,7 +3,7 @@ function validate(){
     var lastName = document.getElementById("lastName").value;
     var ph = document.getElementById("phno").value;
     var regex=/^[a-zA-z]+$/;
-    var phn=/^\d+$/
+    var phn=/^[0-9]{10}$/;
     console.log("inside validate");
     if(firstName!="" || lastName!="")
     {
@@ -22,7 +22,7 @@ function validate(){
     {
         if(phn.test(ph)==false)
         {
-                document.getElementById("phoneValidation").innerHTML = "no alphabets or special characters";
+                document.getElementById("phoneValidation").innerHTML = "must be 10 digits only no special characters";
                 document.getElementById("phno").value="";
         }
     }

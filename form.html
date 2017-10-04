@@ -7,11 +7,11 @@
     </head>
     <body>
         <div class="form">
-            <form id="myForm" action="mailto:ratulchakrabarty1994@gmail.com" method = "post" enctype="text/plain" >
+            <form id="myForm" >
                 FirstName:
-                <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation"></span>
+                <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation" class="validation"></span>
                 <br> <br> LastName:
-                <input type="text" name="lastName" id="lastName" size="40" placeholder="Enter your lastName" required ><br><span id="secondValidation"></span> <br>
+                <input type="text" name="lastName" id="lastName" size="40" placeholder="Enter your lastName" required ><br><span id="secondValidation" class="validation"></span> <br>
                 
                     <input type="radio" name="gender" id="male"> male <br>
                     <input type="radio" name="gender" id="female"> female <br>
@@ -32,13 +32,13 @@
                 email : <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
                 <br> <span id="emailValidation"></span><br>
                 password: <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
-                phone number: <input type="tel" id = "phno" placeholder="Enter your phone number" size="10" required><br><span id="phoneValidation"></span><br><br>
+                phone number: <input type="tel" id = "phno" placeholder="Enter your phone number" size="10" required><br><span id="phoneValidation" class="validation"></span><br><br>
 
                 Address: <br>
                 <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br><span id="addressValidation"></span> <br>
                 <input type="submit" value="Submit" id="submit" onclick="validate();" >  
                 <input type="reset" value="Reset" id="reset" onclick="resetFields();">          
-
+                
             </form>
         </div>
     </body>
