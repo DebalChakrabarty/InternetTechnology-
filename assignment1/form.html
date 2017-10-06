@@ -14,7 +14,7 @@
                 <input type="text" name="lastName" id="lastName" size="40" placeholder="Enter your lastName" required ><br><span id="secondValidation" class="validation"></span> <br>
                 
                     <input type="radio" name="gender" id="male"> male <br>
-                    <input type="radio" name="gender" id="female"> female <br>
+                    <input type="radio" name="gender" id="female"> female <br> <br>
                 Tshirt size <br>
                 <select name="tshirtColor" id="dropDown">
                     <option value="small"> Small </option>
@@ -36,8 +36,11 @@
 
                 Address: <br>
                 <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br><span id="addressValidation"></span> <br>
-                <input type="submit" value="Submit" id="submit" onclick="validate();" >  
-                <input type="reset" value="Reset" id="reset" onclick="resetFields();">          
+                <div class="buttonholder">
+                    <input type="submit" value="Submit" id="submit" onclick="validate();" class="buttons">  
+                    <input type="reset" value="Reset" id="reset" onclick="resetFields();" class="buttons"> 
+                </div>
+                         
                 
             </form>
         </div>

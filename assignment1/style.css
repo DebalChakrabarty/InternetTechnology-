@@ -1,5 +1,6 @@
 body{
     background-image: url("back.jpg");
+    font-size: 25px;
 }
 div.form
 {
@@ -23,27 +24,26 @@ form
     width: 310px;
 }
 #password{
-    width: 310px;
+    width: 300px;
 }
 #firstName{
     margin-top: 40px;
     width: 310px;
 }
 #phno{
-    width:272px;
+    width:237px;
 }
 #lastName{
     margin-left: 4px;
     width: 310px;
 }
 #address{
-    width: 400px;
+    width: 435px;
 }
-#submit{
-    padding: 20px;
-    border-radius: 8px;
+.buttonholder{
+    text-align: center;
 }
-#reset{
+.buttons{
     padding: 20px;
     border-radius: 8px;
 }
@@ -53,3 +53,11 @@ form
     color: rgba(250, 3, 3, 0.45);
     font-size: x-large;
 }
+.buttons:hover{
+    background-color: #9696E2;
+}
+.buttons:active {
+    background-color:#9595E7;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
