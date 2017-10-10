@@ -7,6 +7,7 @@ function validate(){
 
     var regex=/^[a-zA-z]+$/;
     var phn=/^[0-9]{10}$/;
+    var e=/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
     
     var flag=true;
     
@@ -35,10 +36,20 @@ function validate(){
                 flag=false;
         }
     }
+    if(email!="")
+    {
+            if(e.test(email)==false)
+            {
+                document.getElementById("emailValidation").innerHTML = "enter a valid email id";
+                document.getElementById("Email").value="";
+                flag=false;
+            }
+    }
     if(flag && firstName!="" && lastName!="" && ph!="" && email!="" && password!="")
     {
             document.write("Form successfully submitted");
     }
+   
 }
 function resetFields(){
         window.location.reload(true);

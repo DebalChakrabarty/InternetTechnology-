@@ -1,5 +1,5 @@
 body{
-    background: #298eea;
+    background: #5b5f63;
     font-size: 20px;
 }
 body *{
@@ -9,9 +9,13 @@ div.form
 {
     display: block;
     text-align: center;
-    background: white;
+    background: rgba(248, 248, 248, 0.815);
     margin-left: 600px;
     margin-right: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 h2
 {
@@ -30,6 +34,11 @@ form
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+input[type=radio]:not(old){
+    display: inline-block;
+    line-height: 24px;
+    border: 0.0625em solid rgb(209, 19, 19);
 }
 #email{
     margin-left: 30px;
@@ -64,7 +73,7 @@ form
     text-align: center;
     color: white;
     background: #15CD72;
-    border: 0;
+    border: 1;
     cursor: pointer;
     margin-bottom: 0;
 }
