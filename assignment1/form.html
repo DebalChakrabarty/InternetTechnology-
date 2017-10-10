@@ -8,31 +8,34 @@
     <body>
         <div class="form">
             <form id="myForm" >
+                <h2> Sign Up</h2>
                 FirstName:
                 <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your firstname" required> <br> <span id="firstValidation" class="validation"></span>
-                <br> <br> LastName:
+                <br> LastName:
                 <input type="text" name="lastName" id="lastName" size="40" placeholder="Enter your lastName" required ><br><span id="secondValidation" class="validation"></span> <br>
-                
-                    <input type="radio" name="gender" id="male"> male <br>
+                <label for="gender"> Gender: </label> <br>
+                    <input type="radio" name="gender" id="male" checked> male <br>
                     <input type="radio" name="gender" id="female"> female <br> <br>
-                Tshirt size <br>
-                <select name="tshirtColor" id="dropDown">
-                    <option value="small"> Small </option>
-                    <option value="medium" selected>  Medium </option>
-                    <option value="large"> Large </option>
-                </select>
-                <br><br>
-                Tshirt color <br>
-                <select name="tshirtColor" id="dropDown">
-                    <option value="small"> red </option>
-                    <option value="medium" selected>  blue </option>
-                    <option value="large"> yellow </option>
-                </select>
-                <br><br>
+                
+                <div style="display:block;">
+                    Tshirt size-
+                    <select name="tshirtColor" id="dropDown" style="margin-right:18px;">
+                        <option value="small"> Small </option>
+                        <option value="medium" selected>  Medium </option>
+                        <option value="large"> Large </option>
+                    </select>
+                    Tshirt color-
+                    <select name="tshirtColor" id="dropDown">
+                        <option value="small"> red </option>
+                        <option value="medium" selected>  blue </option>
+                        <option value="large"> yellow </option>
+                    </select>
+                </div>
+                <br>
                 email : <input type="email" name="Email" id="Email" placeholder="Enter your email" required>
                 <br> <span id="emailValidation"></span><br>
                 password: <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
-                phone number: <input type="tel" id = "phno" placeholder="Enter your phone number" size="10" required><br><span id="phoneValidation" class="validation"></span><br><br>
+                phone number: <input type="tel" id = "phno" placeholder="Enter your phone number" size="10" required><br><span id="phoneValidation" class="validation"></span><br>
 
                 Address: <br>
                 <textarea name="Address" id="address" cols="30" rows="10" placeholder="Enter your address here" required></textarea><br><span id="addressValidation"></span> <br>

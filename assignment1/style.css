@@ -1,13 +1,25 @@
 body{
-    background-image: url("back.jpg");
-    font-size: 25px;
+    background: #298eea;
+    font-size: 20px;
+}
+body *{
+    box-sizing: border-box;
 }
 div.form
 {
     display: block;
     text-align: center;
+    background: white;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+h2
+{
+    text-align: center;
 }
 input{
+    padding: 10px;
+    border: 2px solid #e7e7e7
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -21,17 +33,17 @@ form
 }
 #email{
     margin-left: 30px;
-    width: 310px;
+    width: 325px;
 }
 #password{
-    width: 300px;
+    width: 320px;
 }
 #firstName{
     margin-top: 40px;
     width: 310px;
 }
 #phno{
-    width:237px;
+    width:270px;
 }
 #lastName{
     margin-left: 4px;
@@ -44,8 +56,17 @@ form
     text-align: center;
 }
 .buttons{
-    padding: 20px;
-    border-radius: 8px;
+    height: auto;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background: #15CD72;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 .validation{
     margin-left: 100px;
