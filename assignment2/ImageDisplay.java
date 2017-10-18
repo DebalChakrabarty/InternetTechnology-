@@ -7,7 +7,7 @@ public class ImageDisplay extends Applet
 	Image picture;
 	public void init()
 	{
-		picture = getImage(getDocumentBase(),"index.jpg");
+		picture = getImage(getDocumentBase(),"index.png");
 	}
 	public void paint(Graphics g)
 	{

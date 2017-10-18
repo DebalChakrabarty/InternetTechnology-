@@ -8,7 +8,7 @@ function validate(){
     var regex=/^[a-zA-z]+$/;
     var phn=/^[0-9]{10}$/;
     var e=/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    
+
     var flag=true;
     
     console.log("inside validate");
@@ -48,9 +48,13 @@ function validate(){
     if(flag && firstName!="" && lastName!="" && ph!="" && email!="" && password!="")
     {
             document.write("Form successfully submitted");
+            setTimeout(function() {  
+                window.location.reload(true);
+             }, 3000);
     }
    
 }
 function resetFields(){
         window.location.reload(true);
+      
 }
