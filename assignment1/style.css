@@ -10,8 +10,8 @@ div.form
     display: block;
     text-align: center;
     background: rgba(248, 248, 248, 0.815);
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 500px;
+    margin-right: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
     -webkit-border-radius: 5px;
@@ -27,6 +27,7 @@ input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    
 }
 form
 {
@@ -45,18 +46,19 @@ input[type=radio]:not(old){
     width: 325px;
 }
 #password{
-    width: 320px;
+    width: 325px;
+    margin-left: 12px;
 }
 #firstName{
     margin-top: 40px;
-    width: 310px;
+    width: 325px;
 }
 #phno{
-    width:270px;
+    width:295px;
 }
 #lastName{
-    margin-left: 4px;
-    width: 310px;
+    margin-left: 10px;
+    width: 325px;
 }
 #address{
     width: 435px;
