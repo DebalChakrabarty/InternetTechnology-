@@ -27,7 +27,6 @@ input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    
 }
 form
 {
@@ -80,10 +79,10 @@ input[type=radio]:not(old){
     margin-bottom: 0;
 }
 .validation{
-    margin-left: 100px;
+    margin-left: 110px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     color: rgba(250, 3, 3, 0.45);
-    font-size: x-large;
+    font-size: x-small;
 }
 .buttons:hover{
     background-color: #9696E2;
@@ -93,3 +92,12 @@ input[type=radio]:not(old){
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+  #phonevalidation{
+      margin-left: 136px;
+  }
+#submit{
+    float: left;
+}
+#reset{
+    float:right;
+}
