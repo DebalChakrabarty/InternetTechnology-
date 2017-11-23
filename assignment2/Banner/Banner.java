@@ -1,14 +1,20 @@
-import java.applet.*;
 import java.awt.*;
-
-/* <applet code = "Banner" width = 500 height = 500> </applet> */
-
+import java.applet.*;
 
 public class Banner extends Applet
 {
-	public void paint(Graphics g)
-	{
-		g.drawString("Hello",123,125);
+	String msg;
+	char ch;
+	boolean stop;
+	Thread t;
+
+	public void init () {
+		msg = "Maulana Abul Kalam Azad University of Technology. ";
+		setFont(new Font("TimesRoman",Font.BOLD + Font.ITALIC, 20));
+		setBackground(Color.cyan);
+		setForeground(Color.red);
+	}
+	public void paint (Graphics g) {
+		g.drawString(msg, 150, 150);
 	}
 }
-

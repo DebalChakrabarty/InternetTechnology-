@@ -10,7 +10,7 @@ public class DigiClock extends Applet implements Runnable
 
 	public void init () {
 		setFont(new Font("Helvetica",Font.BOLD, 50));
-		setBackground(Color.red);
+		setBackground(Color.darkGray);
 	}
 
 	public void start () {
@@ -35,7 +35,7 @@ public class DigiClock extends Applet implements Runnable
 	}
 
 	public void paint (Graphics g) {
-		g.setColor(Color.yellow);
+		g.setColor(Color.GRAY);
 		g.drawString(time, 125, 250);
 	}
 }
