@@ -1,4 +1,5 @@
 \documentclass[a4paper,16pt]{article}
+%packages
 \usepackage[margin=0.53in]{geometry}
 \usepackage{sectsty}
 \usepackage{graphicx}
@@ -8,15 +9,19 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{pxfonts}
+%caption setup and page style
 \captionsetup{font=large,labelfont=large}
 \pagestyle{fancy}
 \captionsetup{font=large,labelfont=large}
 \sectionfont{\Huge\bfseries}
 \subsectionfont{\Large \bfseries}
 \usepackage{tocloft}
-\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[LE,RO]{\thepage} % page number in "outer" position of footer line
 \fancyfoot[RE,LO]{} % other info in "inner" position of footer line
 \rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\setlength\cftbeforesubsecskip{20pt}
+\setlength\cftaftertoctitleskip{20pt}
+%language definitions and customizations
 \lstset{
 language={HTML},
 keywords={input,html,body,head,form,span,select,option,br,h1,h2,div,textarea,id,class,name,label,script,link,rel,type,src,href,value,cols,rows},
@@ -42,20 +47,20 @@ numbers=left,frame=shadowbox,basicstyle=\ttfamily\large,
 	morestring=[b]",
 	morestring=[b]'
 }
+%beggining of the document
 \begin{document}
 	{
-		\doublespacing
 		\pagenumbering{arabic}
 		{
 			\renewcommand\contentsname{\Huge Contents}
 			\renewcommand\cftsecfont{\LARGE}
-			
 			\renewcommand\cftsubsecfont{\Large}
-			
+			\doublespacing
+			\doublespacing
 			\doublespacing
 			\tableofcontents
-			\doublespacing
-			\addtocontents{toc}{~\hfill\textbf{\LARGE Page}\par}
+			\singlespacing
+			\addtocontents{toc}{~\hfill\textbf{\Large Page}\par}
 		}
 	}
 	\newpage

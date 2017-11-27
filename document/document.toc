@@ -1,4 +1,4 @@
-\nobreakspace {}\hfill \textbf {\relax \fontsize {17.28}{22}\selectfont Page}\par 
+\nobreakspace {}\hfill \textbf {\relax \fontsize {14.4}{18}\selectfont Page}\par 
 \contentsline {section}{\numberline {1}Assignment-1}{2}
 \contentsline {subsection}{\numberline {1.1}HTML form}{2}
 \contentsline {subsection}{\numberline {1.2}JavaScript}{3}
@@ -10,4 +10,4 @@
 \contentsline {subsection}{\numberline {2.4}Event listener using Applet}{10}
 \contentsline {subsection}{\numberline {2.5}Playing sound using applet}{11}
 \contentsline {subsection}{\numberline {2.6}Image Display using applet}{12}
-\contentsline {subsection}{\numberline {2.7}Image Display using applet}{13}
+\contentsline {subsection}{\numberline {2.7}Reading a file using applet}{13}
