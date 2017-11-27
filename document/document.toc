@@ -4,4 +4,10 @@
 \contentsline {subsection}{\numberline {1.2}JavaScript}{3}
 \contentsline {subsection}{\numberline {1.3}CSS}{4}
 \contentsline {section}{\numberline {2}Assignment-2}{7}
-\contentsline {subsection}{\numberline {2.1}Applet}{7}
+\contentsline {subsection}{\numberline {2.1}Banner using applet}{7}
+\contentsline {subsection}{\numberline {2.2}Generating shapes using applet}{8}
+\contentsline {subsection}{\numberline {2.3}Clock using applet}{9}
+\contentsline {subsection}{\numberline {2.4}Event listener using Applet}{10}
+\contentsline {subsection}{\numberline {2.5}Playing sound using applet}{11}
+\contentsline {subsection}{\numberline {2.6}Image Display using applet}{12}
+\contentsline {subsection}{\numberline {2.7}Image Display using applet}{13}
