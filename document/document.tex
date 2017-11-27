@@ -1,5 +1,5 @@
 \documentclass[a4paper,16pt]{article}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{sectsty}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -7,6 +7,7 @@
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
+\captionsetup{font=large,labelfont=large}
 \pagestyle{fancy}
 \captionsetup{font=large,labelfont=large}
 \sectionfont{\Huge\bfseries}
@@ -16,8 +17,8 @@
 \fancyfoot[RE,LO]{} % other info in "inner" position of footer line
 \rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \lstset{
-language={HTML,CSS},
-numbers=left,frame=shadowbox,basicstyle=\ttfamily\large
+language={HTML},
+numbers=left,frame=shadowbox,basicstyle=\ttfamily\large,
 }
 \lstdefinelanguage{CSS}{
 	keywords={color,background-image:,margin,padding,font,weight,display,position,top,left,right,bottom,list,style,border,size,white,space,min,width, transition:, transform:, transition-property, transition-duration, transition-timing-function},	
@@ -29,6 +30,13 @@ numbers=left,frame=shadowbox,basicstyle=\ttfamily\large
 	showstringspaces=false,
 	alsoletter={:},
 	alsodigit={-}
+}
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break,document,getElementByID},
+	morecomment=[s]{/*}{*/},
+	morecomment=[l]//,
+	morestring=[b]",
+	morestring=[b]'
 }
 \begin{document}
 	{
@@ -48,13 +56,18 @@ numbers=left,frame=shadowbox,basicstyle=\ttfamily\large
 	}
 	\newpage
 	\section{Assignment-1}
-	\subsection{Designing an html form}
+	\subsection{HTML form}
 	\vspace{0.2in}
 	\lstinputlisting{code/form.html}
-	\subsection{External javascript}
-	\vspace{0.2in}
-	\lstinputlisting{code/form.js}
-	\vspace{0.2in}
-	\subsection{External CSS}
-	\lstinputlisting{code/style.css}
+	\subsection{JavaScript}
+	\lstinputlisting[language=JavaScript]{code/form.js}
+	\subsection{CSS}
+	\lstinputlisting[language=CSS]{code/style.css}
+	\begin{figure}[h!]
+		\includegraphics*[scale=0.25,width=1\linewidth]{code/form.png}
+		\caption{\large form.html}
+	\end{figure}
+	\clearpage
+	\section{Assignment-2}
+	\subsection{Applet}
 \end{document}

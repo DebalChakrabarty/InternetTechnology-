@@ -83,7 +83,6 @@ input[type=radio]:not(old){
 }
 .validation{
     margin-left: 110px;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     color: rgba(250, 3, 3, 0.45);
     font-size: x-small;
 }
