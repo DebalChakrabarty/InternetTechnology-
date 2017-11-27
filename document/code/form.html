@@ -1,0 +1,53 @@
+<html>
+ <head>
+   <link rel="stylesheet" href="style.css">
+   <script type="text/javascript" src="form.js"></script>
+ </head>
+  <body>
+   <div class="form">
+    <form id="myForm" >
+     <h2> Sign Up</h2>
+    FirstName:
+    <input type="text"name="firstName"id="firstName">
+    <br> <span id="firstValidation" class="validation">
+    </span>
+    <br><br> LastName:
+    <input type="text" name="lastName" id="lastName">
+    <br><span id="secondValidation" class="validation">
+    </span>
+    <label for="gender"> Gender: </label> <br>
+    <input type="radio" name="gender" id="male" checked>male
+    <input type="radio" name="gender" id="female"> female
+    <div style="display:block;">
+      Tshirt size-
+      <select name="tshirtColor" id="dropDown">
+       <option value="small"> Small </option>
+       <option value="medium" selected>  Medium </option>
+       <option value="large"> Large </option>
+      </select>
+      <br><br>Tshirt color-
+      <select name="tshirtColor" id="dropDown">
+       <option value="small"> red </option>
+       <option value="medium" selected>  blue </option>
+       <option value="large"> yellow </option>
+      </select>
+    </div><br>email :
+    <input type="email" name="Email" id="Email">
+    <span id="emailValidation" class="validation"></span>
+    password:
+    <input type="password" name="password" id="password">
+    <br><br> <br>
+    phone number: <input type="tel" id = "phno">
+    <br><span id="phoneValidation" class="validation"></span>
+    Address: <br>
+    <textarea name="Address" id="address" cols="30" rows="10">
+    </textarea>
+    <br><span id="addressValidation"></span> <br>
+    <div class="buttonholder">
+     <input type="submit"value="Submit"id="submit">
+     <input type="reset"value="Reset"id="reset">
+    </div>
+  </form>
+</div>
+</body>
+</html>
