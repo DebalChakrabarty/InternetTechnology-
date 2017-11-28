@@ -11,11 +11,15 @@
 \usepackage{pxfonts}
 %caption setup and page style
 \captionsetup{font=large,labelfont=large}
+\fancyfoot{} % clear all footer fields
 \pagestyle{fancy}
 \captionsetup{font=large,labelfont=large}
+\usepackage{tocloft}
 \sectionfont{\Huge\bfseries}
 \subsectionfont{\Large \bfseries}
-\usepackage{tocloft}
+\renewcommand\cftsecpagefont{\LARGE}
+\renewcommand\cftsubsecpagefont{\Large}
+
 \fancyfoot[LE,RO]{\thepage} % page number in "outer" position of footer line
 \fancyfoot[RE,LO]{} % other info in "inner" position of footer line
 \rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
